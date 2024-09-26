@@ -252,7 +252,7 @@ function Fact({ fact, setFacts }) {
 
     if (!error)
       setFacts((facts) =>
-        facts.map((f) => (f.id === fact.id ? updatedFact[0] : fact))
+        facts.map((f) => (f.id === fact.id ? updatedFact[0] : f))
       );
   }
   return (
